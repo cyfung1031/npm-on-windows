@@ -60,11 +60,12 @@ To enable the full features of npm, you need to do the following too.
 
 ![1423556-20190119145310357-1442462088](https://user-images.githubusercontent.com/44498510/131615134-310e51b9-c196-4490-b085-4ab450d4e7cf.png)
 
+2. add PATH "C:\nodejs\;C:\nodejs\node_global\;"
+
+![1423556-20190119151816709-1265471023](https://user-images.githubusercontent.com/44498510/131615255-b52e05b6-e756-4663-9503-670821e29f69.png)![1423556-20190119152556038-514540680](https://user-images.githubusercontent.com/44498510/131615271-85d427dc-443a-4cd9-9bd9-1d59e27492ae.png)
 
 2. Open **[cmd](https://www.lifewire.com/how-to-open-command-prompt-2618089)** and type to check the following:
 ```
-set PATH=%PATH%;C:\nodejs\
-set PATH=%PATH%;C:\nodejs\node_global\
 npm config set prefix "C:\nodejs\node_global"
 npm config set cache "C:\nodejs\node_cache"
 ```
