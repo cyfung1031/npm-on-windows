@@ -3,7 +3,9 @@ This is the guideline for nodejs + npm installation on Windows (including window
 
 # Description
 npm and Node.js are quite common to the developers but they are unfriendly to Windows.
-If you use .msi installation, it usually fails. (see "https://github.com/npm/npmlog/issues/48")
+
+If you use .msi installation, it usually fails. (see https://github.com/npm/npmlog/issues/48)
+
 Here is to introduce a proper method for its installation.
 
 # Official Files
@@ -15,29 +17,65 @@ Here is to introduce a proper method for its installation.
 | npm (Windows 7+) Part 2 | 1.4.9 (tgz) | 01-May-2014 | https://nodejs.org/dist/npm/npm-1.4.9.tgz
 
 Remarks: 
-* Last installable Node.js on Windows 7 is v13.14.0 ( https://www.centennialsoftwaresolutions.com/post/install-node-js-on-windows-7 )
+* Last installable Node.js on Windows 7 is v13.14.0 ( see [Install Node.js on Windows 7](https://www.centennialsoftwaresolutions.com/post/install-node-js-on-windows-7) )
 * There is no LTS version in v13 ( https://nodejs.org/en/blog/release/ )
-* Up to 2021-09-01, nodejs choose to maintain LTS versions in v12 instead of v13 - it is highly not recommended to install any v13 version
+* Up to 2021-09-01, nodejs choose to maintain v12 LTS instead of v13 - highly not recommended to install any v13 version
 * List of downloads: https://nodejs.org/en/download/releases/
 
 
 # Installation Guide
 
 The following installations is to Node.js v12.18.4 (LTS) and npm v6.14.6. 
+
 (npm versions shall refer to https://nodejs.org/en/download/releases/ )
+
+Both Part A & B are required.
+
+## Part A
 
 1. Download node.exe from https://nodejs.org/download/release/v12.18.4/win-x64/node.exe and save it to C:\nodejs
 2. Download npm.zip from https://nodejs.org/dist/npm/npm-1.4.9.zip and extract "node_modules" and "npm.cmd" to C:\nodejs
 3. Download npm.tgz from https://nodejs.org/dist/npm/npm-1.4.9.tgz and extract "npm" (from npm/bin) to C:\nodejs
+4. Open **[cmd](https://www.lifewire.com/how-to-open-command-prompt-2618089)** and type to check the following:
+```
+C:
+cd nodejs
+node-v //display "v12.19.0"
+npm -v //display "v1.4.9"
+```
 
-4. Create Empty Directories "C:\nodejs\node_global" and "C:\nodejs\node_cache"
+![1423556-20190804232233056-769683284](https://user-images.githubusercontent.com/44498510/131615142-186d7407-4e4f-40a4-9bb7-9771abda9c1d.png)
 
-5. add PATH "C:\nodejs; C:\nodejs\node_global; "
-6. open cmd 
-7. check "node -v" (12.18.4) and "npm -v" (1.4.9)
-8. npm install -g npm@6.14.15
+5. Type the following to install the npm
+```
+npm install -g npm@6.14.6
+```
 
-9. npm config set prefix "C:\nodejs\node_global"
-10. npm config set cache "C:\nodejs\node_cache"
+## Part B
 
-11. add system variable "NODE_PATH" as "C:\nodejs\node_global\node_modules"
+To enable the full features of npm, you need to do the following too.
+
+
+1. Create Empty Directories "C:\nodejs\node_global" and "C:\nodejs\node_cache"
+
+![1423556-20190119145310357-1442462088](https://user-images.githubusercontent.com/44498510/131615134-310e51b9-c196-4490-b085-4ab450d4e7cf.png)
+
+
+2. add PATH "C:\nodejs; C:\nodejs\node_global; "
+
+![1423556-20190119151816709-1265471023](https://user-images.githubusercontent.com/44498510/131615255-b52e05b6-e756-4663-9503-670821e29f69.png)![1423556-20190119152556038-514540680](https://user-images.githubusercontent.com/44498510/131615271-85d427dc-443a-4cd9-9bd9-1d59e27492ae.png)
+
+
+3. Open **[cmd](https://www.lifewire.com/how-to-open-command-prompt-2618089)** and type to check the following:
+```
+npm config set prefix "C:\nodejs\node_global"
+npm config set cache "C:\nodejs\node_cache"
+```
+
+
+4. add system variable "NODE_PATH" as "C:\nodejs\node_global\node_modules"
+
+![1423556-20190119151816709-1265471023](https://user-images.githubusercontent.com/44498510/131615255-b52e05b6-e756-4663-9503-670821e29f69.png)![1423556-20190119152300535-790205673](https://user-images.githubusercontent.com/44498510/131615313-8d89e699-ff32-4fea-b253-e94f19e806da.png)
+
+
+
