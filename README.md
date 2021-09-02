@@ -16,12 +16,20 @@ Here is to introduce a proper method for its installation.
 | npm (Windows 7+) Part 1 | 1.4.9 (zip) | 01-May-2014 | https://nodejs.org/dist/npm/npm-1.4.9.zip
 | npm (Windows 7+) Part 2 | 1.4.9 (tgz) | 01-May-2014 | https://nodejs.org/dist/npm/npm-1.4.9.tgz
 
-Remarks: 
+![qwcdsvf](https://user-images.githubusercontent.com/44498510/131765520-60a3c2e1-5e92-4e8b-a4b0-971440705c71.PNG)
+![qdsvfdbt](https://user-images.githubusercontent.com/44498510/131765523-f522ed26-6a03-4973-8367-2d753a639d8b.PNG)
+
+## Node.js v13?
+
 * Last installable Node.js on Windows 7 is v13.14.0 ( see [Install Node.js on Windows 7](https://www.centennialsoftwaresolutions.com/post/install-node-js-on-windows-7) )
 * There is no LTS version in v13 ( https://nodejs.org/en/blog/release/ )
-* Up to 2021-09-01, nodejs choose to maintain v12 LTS instead of v13 - highly not recommended to install any v13 version
-* List of downloads: https://nodejs.org/en/download/releases/
+* Up to 2021-09-01, Node.js's [Committee](https://nodejs.org/en/about/community/) has chosen to maintain v12 LTS instead of v13
+* Therefore, it is highly not recommended to install any v13 version
 
+## Official Releases
+
+* List of releases: https://nodejs.org/en/blog/release/
+* List of downloads: https://nodejs.org/en/download/releases/
 
 # Installation Guide
 
@@ -36,11 +44,15 @@ Both Part A & B are required.
 1. Download node.exe from https://nodejs.org/download/release/v12.18.4/win-x64/node.exe and save it to C:\nodejs
 2. Download npm.zip from https://nodejs.org/dist/npm/npm-1.4.9.zip and extract "node_modules" and "npm.cmd" to C:\nodejs
 3. Download npm.tgz from https://nodejs.org/dist/npm/npm-1.4.9.tgz and extract "npm" (from npm/bin) to C:\nodejs
-4. Open **[cmd](https://www.lifewire.com/how-to-open-command-prompt-2618089)** and type to check the following:
+
+![qsmkm](https://user-images.githubusercontent.com/44498510/131765182-cd87006e-39ae-4aec-95f2-db1c0859ffc8.png)
+
+
+5. Open **[cmd](https://www.lifewire.com/how-to-open-command-prompt-2618089)** and type to check the following:
 ```
 C:
 cd nodejs
-node-v //display "v12.19.0"
+node-v //display "v12.18.4"
 npm -v //display "v1.4.9"
 ```
 
