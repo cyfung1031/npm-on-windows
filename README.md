@@ -75,5 +75,14 @@ npm config set cache "C:\nodejs\node_cache"
 
 ![1423556-20190119151816709-1265471023](https://user-images.githubusercontent.com/44498510/131615255-b52e05b6-e756-4663-9503-670821e29f69.png)![1423556-20190119152300535-790205673](https://user-images.githubusercontent.com/44498510/131615313-8d89e699-ff32-4fea-b253-e94f19e806da.png)
 
+# Appendix
 
+## Install Yarn
+```
+npm install --global yarn
+```
 
+## Install Vue CLI
+```
+npm install --global @vue/cli
+```
