@@ -100,3 +100,5 @@ npm install --global yarn
 ```
 npm install --global @vue/cli
 ```
+
+* It is highly recommended to use `vue create XXXXX --packageManager npm` instead of yarn
