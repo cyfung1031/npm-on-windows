@@ -24,7 +24,7 @@ Here is to introduce a proper method for its installation.
 
 ## npm 1.4.9?
 
-* This is the last offical release of npm in the form of zip file (old npm.cmd and old node_modules)
+* This is the last official release of npm in the form of zip file (old npm.cmd and old node_modules)
 * We use this old tool to install the new npm
 * Delete npm 1.4.9 after installation of new npm
 
