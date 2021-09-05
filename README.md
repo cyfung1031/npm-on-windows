@@ -9,14 +9,11 @@ If you use .msi installation, it usually fails. (see https://github.com/npm/npml
 Here is to introduce a proper method for its installation.
 
 # Official Files
-| File | Version | Release Date | Download |
-| --- | --- | --- | --- |
-| Node.js (Windows 7) | v12.22.6 (LTS) | 31-Aug-2021 | https://nodejs.org/download/release/v12.22.6/win-x64/node.exe
-| Node.js (Windows 8.1+) | v14.17.6 (LTS) | 31-Aug-2021 | https://nodejs.org/download/release/v14.17.6/win-x64/node.exe
-| npm (Windows 7+) | 1.4.9 (zip) | 01-May-2014 | https://nodejs.org/dist/npm/npm-1.4.9.zip
-
-![qwcdsvf](https://user-images.githubusercontent.com/44498510/131765520-60a3c2e1-5e92-4e8b-a4b0-971440705c71.PNG)
-![qdsvfdbt](https://user-images.githubusercontent.com/44498510/131765523-f522ed26-6a03-4973-8367-2d753a639d8b.PNG)
+| File | Version | Release Date | Download | Size | MD5
+| --- | --- | --- | --- | ---
+| Node.js (Windows 7) | v12.22.6 (LTS) | 31-Aug-2021 | https://nodejs.org/download/release/v12.22.6/win-x64/node.exe | 28.8 MB | 2E820E1C7688484024BFAF13E8F9E11F
+| Node.js (Windows 8.1+) | v14.17.6 (LTS) | 31-Aug-2021 | https://nodejs.org/download/release/v14.17.6/win-x64/node.exe | TBC | TBC
+| npm (Windows 7+) | 1.4.9 (zip) | 01-May-2014 | https://nodejs.org/dist/npm/npm-1.4.9.zip | 2.19MB | 7CD8BA6F4582C81709B6705978B4B9ED
 
 ## Node.js v13?
 
@@ -25,10 +22,26 @@ Here is to introduce a proper method for its installation.
 * Up to 2021-09-01, Node.js's [Committee](https://nodejs.org/en/about/community/) has chosen to maintain v12 LTS instead of v13
 * Therefore, it is highly not recommended to install any v13 version
 
+## npm 1.4.9?
+
+* This is the last offical release of npm in the form of zip file (old npm.cmd and old node_modules)
+* We use this old tool to install the new npm
+* Delete npm 1.4.9 after installation of new npm
+
 ## Official Releases
 
 * List of releases: https://nodejs.org/en/blog/release/
 * List of downloads: https://nodejs.org/en/download/releases/
+
+## Screenshot 1
+* https://nodejs.org/en/blog/release/
+
+![qwcdsvf](https://user-images.githubusercontent.com/44498510/131765520-60a3c2e1-5e92-4e8b-a4b0-971440705c71.PNG)
+
+## Screenshot 2 
+* https://nodejs.org/en/download/releases/
+
+![qdsvfdbt](https://user-images.githubusercontent.com/44498510/131765523-f522ed26-6a03-4973-8367-2d753a639d8b.PNG)
 
 # Installation Guide
 
