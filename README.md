@@ -102,6 +102,7 @@ npm install --global @vue/cli
 ```
 
 * It is highly recommended to use `vue create XXXXX --packageManager npm` instead of yarn
+* Default Profile: `%HOMEPATH%\.vuerc`
 
 ## Install A Package Locally
 ```
