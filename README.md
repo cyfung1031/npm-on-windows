@@ -9,7 +9,7 @@ If you use .msi installation, it usually fails. (see https://github.com/npm/npml
 Here is to introduce a proper method for its installation.
 
 # Official Files
-| Item &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Version &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Release Date &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Download |
+| Item &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Version &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Release Date &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Download |
 | --- | --- | --- | --- |
 | Node.js (Windows 7) | v12.22.6 (LTS) | 31-Aug-2021 | <p>https://nodejs.org/download/release/v12.22.6/win-x64/node.exe</p> <p>2E820E1C7688484024BFAF13E8F9E11F - 28.8 MB</p> |
 | Node.js (Windows 8.1+) | v14.17.6 (LTS) | 31-Aug-2021 | <p>https://nodejs.org/download/release/v14.17.6/win-x64/node.exe</p> |
