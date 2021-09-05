@@ -14,7 +14,6 @@ Here is to introduce a proper method for its installation.
 | Node.js (Windows 7) | v12.22.6 (LTS) | 31-Aug-2021 | https://nodejs.org/download/release/v12.22.6/win-x64/node.exe
 | Node.js (Windows 8.1+) | v14.17.6 (LTS) | 31-Aug-2021 | https://nodejs.org/download/release/v14.17.6/win-x64/node.exe
 | npm (Windows 7+) | 1.4.9 (zip) | 01-May-2014 | https://nodejs.org/dist/npm/npm-1.4.9.zip
-| npm (Windows 7+) | 1.4.9 (tgz) | 01-May-2014 | https://nodejs.org/dist/npm/npm-1.4.9.tgz
 
 ![qwcdsvf](https://user-images.githubusercontent.com/44498510/131765520-60a3c2e1-5e92-4e8b-a4b0-971440705c71.PNG)
 ![qdsvfdbt](https://user-images.githubusercontent.com/44498510/131765523-f522ed26-6a03-4973-8367-2d753a639d8b.PNG)
@@ -41,9 +40,8 @@ The following installations is to Node.js v12.18.4 (LTS) and npm v6.14.6.
 
 1. Download node.exe from https://nodejs.org/download/release/v12.18.4/win-x64/node.exe and save it to C:\nodejs
 2. Download npm.zip from https://nodejs.org/dist/npm/npm-1.4.9.zip and extract "node_modules" and "npm.cmd" to C:\nodejs
-3. Download npm.tgz from https://nodejs.org/dist/npm/npm-1.4.9.tgz and extract "npm" (from npm/bin) to C:\nodejs *(Optional?)*
 
-![explorer-downloaded](https://user-images.githubusercontent.com/44498510/131765182-cd87006e-39ae-4aec-95f2-db1c0859ffc8.png)
+![explorer-downloaded](https://user-images.githubusercontent.com/44498510/132113746-7ea185f9-cae0-4061-920c-08b1fb3b108c.PNG)
 
 4. Open **[cmd](https://www.lifewire.com/how-to-open-command-prompt-2618089)** and type to check the following:
 ```
@@ -73,7 +71,8 @@ npm -v //display "v1.4.9"
 npm config set prefix "C:\nodejs\node_global"
 npm config set cache "C:\nodejs\node_cache"
 ```
-*As you have added the path "C:\nodejs\" to your system environment, "C: cd nodejs" is no longer required.
+> *Note 1: As you have added the path "C:\nodejs\" to your system environment, "C: cd nodejs" is no longer required.
+> *Note 2: You can edit the text file `%HOMEPATH%\.npmrc` for the same effect.
 
 ## Part C - Install the new npm to node_global
 
@@ -81,6 +80,7 @@ npm config set cache "C:\nodejs\node_cache"
 ```
 npm install -g npm@6.14.6
 ```
+> *Note: You shall find "npm.cmd" and "npx.cmd" in C:\nodejs\node_global after installation
 
 2. Remove the unnecessary old npm files in "C:\nodejs" - leaving only "node.exe", "node_global" and "node_cache"
 ![wcdsvf](https://user-images.githubusercontent.com/44498510/132113281-1d21af19-01d5-4f77-9e52-da080e03aef2.PNG)
@@ -92,11 +92,7 @@ node -v //display "v12.18.4"
 npm -v //display "v6.14.6"
 ```
 
-7. Run cmd again to ensure the npm paths are set
-```
-npm config set prefix "C:\nodejs\node_global"
-npm config set cache "C:\nodejs\node_cache"
-```
+> Note: The .npmrc file shall be the same as your configuration in Part B.
 
 # Appendix
 
