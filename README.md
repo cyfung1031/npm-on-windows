@@ -35,40 +35,26 @@ Here is to introduce a proper method for its installation.
 
 The following installations is to Node.js v12.18.4 (LTS) and npm v6.14.6. 
 
-(npm versions shall refer to https://nodejs.org/en/download/releases/ )
+(For your own installation, you shall refer the corresponding npm version in https://nodejs.org/en/download/releases/ )
 
-Both Part A & B are required.
-
-## Part A
+## Part A - Basic Files for nodejs and npm
 
 1. Download node.exe from https://nodejs.org/download/release/v12.18.4/win-x64/node.exe and save it to C:\nodejs
 2. Download npm.zip from https://nodejs.org/dist/npm/npm-1.4.9.zip and extract "node_modules" and "npm.cmd" to C:\nodejs
-3. Download npm.tgz from https://nodejs.org/dist/npm/npm-1.4.9.tgz and extract "npm" (from npm/bin) to C:\nodejs 
+3. Download npm.tgz from https://nodejs.org/dist/npm/npm-1.4.9.tgz and extract "npm" (from npm/bin) to C:\nodejs *(Optional?)*
 
-*(Step 3 might be not required)*
+![explorer-downloaded](https://user-images.githubusercontent.com/44498510/131765182-cd87006e-39ae-4aec-95f2-db1c0859ffc8.png)
 
-![qsmkm](https://user-images.githubusercontent.com/44498510/131765182-cd87006e-39ae-4aec-95f2-db1c0859ffc8.png)
-
-
-5. Open **[cmd](https://www.lifewire.com/how-to-open-command-prompt-2618089)** and type to check the following:
+4. Open **[cmd](https://www.lifewire.com/how-to-open-command-prompt-2618089)** and type to check the following:
 ```
 C:
 cd nodejs
-node-v //display "v12.18.4"
+node -v //display "v12.18.4"
 npm -v //display "v1.4.9"
 ```
+![cmd-result-version-check](https://user-images.githubusercontent.com/44498510/131615142-186d7407-4e4f-40a4-9bb7-9771abda9c1d.png)
 
-![1423556-20190804232233056-769683284](https://user-images.githubusercontent.com/44498510/131615142-186d7407-4e4f-40a4-9bb7-9771abda9c1d.png)
-
-5. Type the following to install the npm
-```
-npm install -g npm@6.14.6
-```
-
-## Part B
-
-To enable the full features of npm, you need to do the following too.
-
+## Part B - Set your folder locations
 
 1. Create Empty Directories "C:\nodejs\node_global" and "C:\nodejs\node_cache"
 
@@ -78,16 +64,39 @@ To enable the full features of npm, you need to do the following too.
 
 ![1423556-20190119151816709-1265471023](https://user-images.githubusercontent.com/44498510/131615255-b52e05b6-e756-4663-9503-670821e29f69.png)![1423556-20190119152556038-514540680](https://user-images.githubusercontent.com/44498510/131615271-85d427dc-443a-4cd9-9bd9-1d59e27492ae.png)
 
-2. Open **[cmd](https://www.lifewire.com/how-to-open-command-prompt-2618089)** and type to check the following:
+3. add system variable "NODE_PATH" as "C:\nodejs\node_global\node_modules"
+
+![1423556-20190119151816709-1265471023](https://user-images.githubusercontent.com/44498510/131615255-b52e05b6-e756-4663-9503-670821e29f69.png)![1423556-20190119152300535-790205673](https://user-images.githubusercontent.com/44498510/131615313-8d89e699-ff32-4fea-b253-e94f19e806da.png)
+
+4. Open **[cmd](https://www.lifewire.com/how-to-open-command-prompt-2618089)** and type to check the following:
 ```
 npm config set prefix "C:\nodejs\node_global"
 npm config set cache "C:\nodejs\node_cache"
 ```
+*As you have added the path "C:\nodejs\" to your system environment, "C: cd nodejs" is no longer required.
 
+## Part C - Install the new npm to node_global
 
-4. add system variable "NODE_PATH" as "C:\nodejs\node_global\node_modules"
+1. Type the following to install the npm in your "C:\nodejs\node_global" (using old npm)
+```
+npm install -g npm@6.14.6
+```
 
-![1423556-20190119151816709-1265471023](https://user-images.githubusercontent.com/44498510/131615255-b52e05b6-e756-4663-9503-670821e29f69.png)![1423556-20190119152300535-790205673](https://user-images.githubusercontent.com/44498510/131615313-8d89e699-ff32-4fea-b253-e94f19e806da.png)
+2. Remove the unnecessary old npm files in "C:\nodejs" - leaving only "node.exe", "node_global" and "node_cache"
+![wcdsvf](https://user-images.githubusercontent.com/44498510/132113281-1d21af19-01d5-4f77-9e52-da080e03aef2.PNG)
+
+3. Open **[cmd](https://www.lifewire.com/how-to-open-command-prompt-2618089)** and type to check the following:
+```
+cd nodejs
+node -v //display "v12.18.4"
+npm -v //display "v6.14.6"
+```
+
+7. Run cmd again to ensure the npm paths are set
+```
+npm config set prefix "C:\nodejs\node_global"
+npm config set cache "C:\nodejs\node_cache"
+```
 
 # Appendix
 
@@ -111,4 +120,10 @@ npm install xxxx
 ## Run A Package Installed Locally
 ```
 npx xxxx .....
+```
+
+## VS Code
+```
+cd xxxxx
+code .
 ```
