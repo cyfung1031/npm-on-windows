@@ -104,6 +104,7 @@ npm install -g npm@6.14.15
 > - Note: You can find `npm.cmd` and `npx.cmd` in `C:\nodejs\node_global` after installation
 
 2. Remove the unnecessary old npm files in "C:\nodejs" - leaving only "node.exe", "node_global" and "node_cache"
+3. 
 ![image](https://user-images.githubusercontent.com/44498510/137056468-a5b41aed-edd6-4244-b93c-b5592c04e1c3.png)
 
 
